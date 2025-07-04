@@ -12,6 +12,8 @@
             background-image: url('SAGE image.jpeg'); 
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
             color: #333;
         }
         header {
@@ -156,15 +158,22 @@
         @media (max-width: 600px) {
             header {
                 padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
             }
             nav {
                 flex-direction: column;
                 gap: 8px;
                 align-items: flex-start;
+                width: 100%;
             }
             .contact-container {
                 max-width: 99vw;
                 padding: 5px;
+            }
+            body {
+                background-size: contain;
+                background-position: top center;
             }
         }
     </style>

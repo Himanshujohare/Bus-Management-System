@@ -12,6 +12,8 @@
             background-image: url('SAGE image.jpeg'); 
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
             color: #333;
         }
         header {
@@ -94,6 +96,27 @@
             text-decoration: saddlebrown;
             color: inherit;
         }
+        @media (max-width: 600px) {
+            header {
+                padding: 10px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .route-card {
+                width: 99vw;
+                padding: 10px;
+            }
+            body {
+                background-size: contain;
+                background-position: top center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -101,10 +124,7 @@
         <div>
             <img src="logo sage.jpeg" alt="Sage University Logo">
         </div>
-        <nav> <STYle>.three-d-text {
-            color: #222;
-            text-shadow: 3px 3px 0 #f39c12, 6px 6px 0 #d35400;}
-          </STYle>
+        <nav>
             <a href="index.html">HOME</a>
             <a href="routes.html">ROUTES</a> 
             <a href="schedule.html">SCHEDULE</a>

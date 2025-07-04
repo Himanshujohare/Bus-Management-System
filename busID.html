@@ -9,42 +9,92 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('SAGE image.jpeg') no-repeat center center fixed;
+            background-image: url('SAGE image.jpeg'); 
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
             color: #333;
         }
 
-       
-
-        nav {
-            background-color: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            color: #ffffff;
-            font-weight: bold;
-            padding: 40px;
+        header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #ddd;
-           
+            padding: 10px 40px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            position: relative;
         }
 
-        nav .nav-links a {
-            color: #ffffff; 
-            border-radius: 20px;
+        header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .title {
             font-weight: bold;
+            font-size: 24px;
+            color: rgb(128, 15, 15);
+            text-decoration: underline;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
             text-decoration: none;
-            margin: 0 40px;
-            font-size: 16px;
-            padding: 5px 10px;
-           
+            font-weight: bold;
+            position: relative;
         }
 
-        nav .nav-links a:hover {
-           background-color: #d32f2f;
-           color: #fff;
+        nav a:hover {
+            color: #d32f2f;
+        }
+
+        nav .active {
+            color: #d32f2f;
+            font-weight: bolder;
+        }
+
+        details {
+            cursor: pointer;
+            position: relative;
+        }
+
+        summary {
+            outline: none;
+        }
+
+        .vertical-nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .vertical-nav a {
+            padding: 8px 12px;
+            color: #ffffff;
+            text-decoration: none;
             font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .vertical-nav a:hover {
+            background-color: #d32f2f;
+        }
+
+        details[open] .vertical-nav {
+            display: flex;
         }
 
         .container {
@@ -126,17 +176,23 @@
                 align-items: flex-start;
             }
             .id-card {
-                width: 95vw;
+                width: 99vw;
                 padding: 10px;
+            }
+            body {
+                background-size: contain;
+                background-position: top center;
             }
         }
     </style>
 </head>
 <body>
-   
-    
-    <nav>
-        <div class="nav-links">
+    <header>
+        <div>
+            <img src="logo sage.jpeg" alt="Sage University Logo">
+            <div class="title">BUS BOARDING PASS 2024-25</div>
+        </div>
+        <nav>
             <a href="index.html">HOME</a>
             <a href="routes.html">ROUTES</a> 
             <a href="schedule.html">SCHEDULE</a>
@@ -144,10 +200,18 @@
             <a href="#">TRACK BUS</a>
             <a href="NOTIFICATIONS.html">NOTIFICATIONS</a>
             <a href="CONTACTUS.html">CONTACT US</a>
+        </nav>
+        <div>
+            <details>
+                <summary style="font-size: larger; font-weight: bolder; "> ACCOUNT</summary>
+                <nav class="vertical-nav">
+                    <a href="busID.html">Bus ID</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Log Out</a>
+                </nav>
+            </details>
         </div>
-    </nav>
-
-    
+    </header>
     <div class="container">
         <div class="id-card">
             <div class="id-header">
@@ -165,10 +229,8 @@
                 <div class="field">Scholar number: <span id="Scholar number">240168</span></div>
                 <div class="field">Boarding Stop: <span id="boardingStop">Khajuri Kalan</span></div>
                 <div class="field">Route No: <span id="routeNo">3</span></div>
-
                 <div class="field">VALID TILL: <span style="color: red;" id= "VALID TILL" >01 SEP 2025</span> </div>
             </div>
-            
         </div>
     </div>
 </body>

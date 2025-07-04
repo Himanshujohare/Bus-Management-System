@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Status</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('SAGE image.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        nav a:hover {
+            background-color: #d32f2f;
+        }
+
+        /* Fees Card Styles */
+        .fees-container {
+            margin: 50px auto;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .fees-container h2 {
+            font-size: 24px;
+            color: #d32f2f;
+            margin-bottom: 20px;
+        }
+
+        .fees-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .fees-row span {
+            color: #d32f2f;
+        }
+
+        button {
+            background: #d32f2f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #910000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+        }
+        .vertical-nav a {
+            text-decoration: saddlebrown;
+            color: inherit;
+        }
+        /* Responsive Styles */
+        @media (max-width: 900px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                justify-content: flex-start;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+            }
+            .fees-container {
+                max-width: 95vw;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <img src="logo sage.jpeg" alt="SAGE University Logo">
+        </div>
+        <nav> <STYle>.three-d-text {
+            color: #222;
+            text-shadow: 3px 3px 0 #f39c12, 6px 6px 0 #d35400;}
+          </STYle>
+            <a href="index.html">HOME</a>
+            <a href="routes.html">ROUTES</a> 
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="FEESTATUS.html">FEES STATUS</a>
+            <a href="#">TRACK BUS</a>
+            <a href="NOTIFICATIONS.html">NOTIFICATIONS</a>
+            <a href="CONTACTUS.html">CONTACT US</a>
+        </nav>
+        <div>
+            <details>
+                <summary style="font-size: larger; font-weight: bolder; "> ACCOUNT</summary>
+                <nav class="vertical-nav">
+                    <a href="busID.html">Bus ID</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Log Out</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+
+    
+    <section class="fees-container">
+        <h2>Fees Status</h2>
+        <div class="fees-row">
+            <div>Scholar Number:</div>
+            <span>240168</span>
+        </div>
+        <div class="fees-row">
+            <div>Name:</div>
+            <span>Himanshu Johare</span>
+        </div>
+        <div class="fees-row">
+            <div>Total Fees:</div>
+            <span>₹18,000</span>
+        </div>
+        <div class="fees-row">
+            <div>Fees Paid:</div>
+            <span>₹9,000</span>
+        </div>
+        <div class="fees-row">
+            <div>Fees Pending:</div>
+            <span>₹9,000</span>
+        </div>
+        <button onclick="alert('Payment Gateway Coming Soon!')">Pay Fees</button>
+    </section>
+</body>
+</html>

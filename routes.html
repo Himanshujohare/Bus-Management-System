@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('SAGE image.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ddd;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: bolder;
+          font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        nav a:hover {
+            background-color: #d32f2f;
+            color: #fff;
+        }
+        .routes-container {
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 1200px;
+        }
+        .route-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .route-card h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #d32f2f;
+        }
+        .route-card table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .route-card table th,
+        .route-card table td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+        .route-card table th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+        }
+        .vertical-nav a {
+            text-decoration: saddlebrown;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo sage.jpeg" alt="Sage University Logo">
+        </div>
+        <nav> <STYle>.three-d-text {
+            color: #222;
+            text-shadow: 3px 3px 0 #f39c12, 6px 6px 0 #d35400;}
+          </STYle>
+            <a href="index.html">HOME</a>
+            <a href="routes.html">ROUTES</a> 
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="FEESTATUS.html">FEES STATUS</a>
+            <a href="#">TRACK BUS</a>
+            <a href="NOTIFICATIONS.html">NOTIFICATIONS</a>
+            <a href="CONTACTUS.html">CONTACT US</a>
+        </nav>
+        <div>
+            <details>
+                <summary style="font-size: larger; font-weight: bolder; "> ACCOUNT</summary>
+                <nav class="vertical-nav">
+                    <a href="busID.html">Bus ID</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Log Out</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+    <section class="routes-container">
+        <div class="route-card">
+            <h3>Shift 2 - Route No. 1 </h3>
+            <h4>DRIVER: RAVI ANNA    MP04 PA1307 </h4>
+            <h5>CONTACT: 7697868157</h5>
+            <table>
+                <tr>
+                    <th>Stop</th>
+                    <th>Timing</th>
+                </tr>
+                <tr><td>ASHOKA GARDEN</td><td>09:00</td></tr>
+                <tr><td>MANDISQUARE</td><td>09:05</td></tr>
+                <tr><td>SUBHASH PHATAK</td><td>09:10</td></tr>
+                <tr><td>A SECTOR</td><td>09:15</td></tr>
+                <tr><td>GOUTAM NAGAR</td><td>09:20</td></tr>
+                <tr><td>M GANDHI SQUARE</td><td>09:25</td></tr>
+                <tr><td>VIDHYA SAGAR</td><td>09:30</td></tr>
+                <tr><td>AVADHPURI</td><td>09:40</td></tr>
+                <tr><td>SAGE UNIVERSITY</td><td>10:00</td></tr>
+            
+            </table>
+        </div>
+        <div class="route-card">
+            <h3>Shift 2 - Route No. 2</h3>
+            <table>
+                <tr>
+                    <th>Stop</th>
+                    <th>Timing</th>
+                </tr>
+                <tr><td>Shree Ram Colony</td><td>7:50</td></tr>
+                <tr><td>Tulsi Nagar</td><td>7:55</td></tr>
+                <tr><td>Bhawarkuan</td><td>8:00</td></tr>
+                <tr><td>Rau</td><td>8:10</td></tr>
+                <tr><td>SAGE</td><td>8:30</td></tr>
+            </table>
+        </div>
+        <div class="route-card">
+            <h3>Shift 2 - Route No. 3</h3>
+            <table>
+                <tr>
+                    <th>Stop</th>
+                    <th>Timing</th>
+                </tr>
+                <tr><td>Scheme No. 74</td><td>7:45</td></tr>
+                <tr><td>Scheme No. 114</td><td>7:55</td></tr>
+                <tr><td>Tilak Nagar</td><td>8:00</td></tr>
+                <tr><td>Palasia</td><td>8:05</td></tr>
+                <tr><td>SAGE</td><td>8:30</td></tr>
+            </table>
+        </div>
+        
+    </section>
+   
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Bus ID Card</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('SAGE image.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+       
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+           
+        }
+
+        nav .nav-links a {
+            color: #ffffff; 
+            border-radius: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 40px;
+            font-size: 16px;
+            padding: 5px 10px;
+           
+        }
+
+        nav .nav-links a:hover {
+           background-color: #d32f2f;
+           color: #fff;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px); 
+        }
+
+        .id-card {
+            width: 350px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .id-header img {
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .id-content {
+            width: 100%;
+        }
+
+        .field {
+            font-size: 14px;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        .id-photo {
+            margin: 10px 0;
+            margin-top: 0px;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #ddd;
+        }
+
+        .id-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .id-footer {
+            font-size: 12px;
+            color: white;
+            margin-top: 10px;
+        }
+        /* Responsive Styles */
+        @media (max-width: 900px) {
+            nav .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        @media (max-width: 600px) {
+            nav {
+                padding: 10px;
+            }
+            nav .nav-links {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+            }
+            .id-card {
+                width: 95vw;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="routes.html">ROUTES</a> 
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="FEESTATUS.html">FEES STATUS</a>
+            <a href="#">TRACK BUS</a>
+            <a href="NOTIFICATIONS.html">NOTIFICATIONS</a>
+            <a href="CONTACTUS.html">CONTACT US</a>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <div class="id-card">
+            <div class="id-header">
+                <img style="margin-bottom: 2px;" src="logo sage.jpeg" alt="Sage University Logo">
+                <h4 style="color: rgb(128, 15, 15); font-weight: bolder; text-decoration: underline; font-size: larger; margin-bottom: 5px; margin-top: 6px;">SAGE UNIVERSITY, BHOPAL</h4>
+                <h5 style="color: rgb(128, 15, 15); font-weight: bolder; font-size: smaller; text-decoration: underline; margin-top: 0; margin-bottom: 2px;">Sahara Bypass Road, Katara Hills, Extension</h5>
+                <h6 style="font-weight: bolder; font-size: large; margin-top: 11px; margin-bottom: 5px; color: #090909;"> BUS BOARDING PASS 2024-25 </h6>
+            </div>
+            <div class="id-photo">
+                <img style="border: #333; border-radius: 15px;" src="passport photo.jpg" alt="Student Photo">
+            </div>
+            <div style="color: #090909;" class="id-content">
+                <div class="field">Student Name: <span id="studentName">Himanshu Johare</span></div>
+                <div class="field">Branch: <span id="branch">B.Tech CSE</span></div>
+                <div class="field">Scholar number: <span id="Scholar number">240168</span></div>
+                <div class="field">Boarding Stop: <span id="boardingStop">Khajuri Kalan</span></div>
+                <div class="field">Route No: <span id="routeNo">3</span></div>
+
+                <div class="field">VALID TILL: <span style="color: red;" id= "VALID TILL" >01 SEP 2025</span> </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

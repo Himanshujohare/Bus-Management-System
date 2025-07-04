@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - Your Sage Bus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('SAGE image.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.6); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            color: #fff;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #ddd;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fefefe;
+            font-weight: bolder;
+          font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        nav a:hover {
+            background-color: #d32f2f;
+            color: #fff;
+        }
+        .banner h1 {
+            margin: 0;
+            font-size: 2em;
+            text-align: center;
+            color: #d32f2f;
+        }
+        .schedule-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .schedule-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .schedule-container input, .schedule-container select, .schedule-container button {
+            width: calc(100% - 20px);
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .schedule-container button {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .schedule-container button:hover {
+            background-color: #a52828;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; 
+        }
+        .vertical-nav a {
+            text-decoration: saddlebrown;
+            color: inherit;
+        }
+        /* Responsive Styles */
+        @media (max-width: 900px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                justify-content: flex-start;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width: 600px) {
+            .banner h1 {
+                font-size: 1.2em;
+            }
+            header {
+                padding: 10px;
+            }
+            nav {
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+            }
+            .schedule-container {
+                max-width: 95vw;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo sage.jpeg" alt="Sage University Logo">
+        </div>
+        <nav> <STYle>.three-d-text {
+            color: #222;
+            text-shadow: 3px 3px 0 #f39c12, 6px 6px 0 #d35400;}
+          </STYle>
+            <a href="index.html">HOME</a>
+            <a href="routes.html">ROUTES</a> 
+            <a href="schedule.html">SCHEDULE</a>
+            <a href="FEESTATUS.html">FEES STATUS</a>
+            <a href="#">TRACK BUS</a>
+            <a href="NOTIFICATIONS.html">NOTIFICATIONS</a>
+            <a href="#">CONTACT US</a>
+        </nav>
+        <div>
+            <details>
+                <summary style="font-size: larger; font-weight: bolder; "> ACCOUNT</summary>
+                <nav class="vertical-nav">
+                    <a href="busID.html">Bus ID</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Log Out</a>
+                </nav>
+            </details>
+        </div>
+    </header>
+    <section class="banner">
+        <h1>Schedule</h1>
+    </section>
+    <section class="schedule-container">
+        <h2>Search Your Bus Schedule</h2>
+        <form>
+            <input type="text" placeholder="Enter Your Bus Stop" required>
+            <select required>
+                <option value="" disabled selected>Select Shift</option>
+                <option value="Shift 1">Shift 1</option>
+                <option value="Shift 2">Shift 2</option>
+               
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+</body>
+</html>
